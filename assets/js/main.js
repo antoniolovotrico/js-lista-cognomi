@@ -19,8 +19,13 @@ btn.addEventListener("click" , function() {
     //console.log(listaCognomi);
     for (var i=0; i<listaCognomi.length; i++) {
         var cognomi = listaCognomi[i];
+
         var elenco = document.getElementById("lista_cognomi").innerHTML;
         document.getElementById("lista_cognomi").innerHTML = elenco + "<li>" + cognomi + "</li>";
+        // var position = userCognome.index();
+        // document.getElementById("position").innerHTML = position;
+        // var index = userCognome.index();
+        // document.getElementById("position").innerHTML = index;
 
     }
 
