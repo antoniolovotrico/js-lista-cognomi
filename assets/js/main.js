@@ -9,11 +9,20 @@ var listaCognomi = [
     'Verdi'
 ];
 
+//Inserirlo in un array con altri cognom
 btn.addEventListener("click" , function() {
     var userCognome = mioCognome.value;
     listaCognomi.push(userCognome);
-    console.log(userCognome);
-    console.log(listaCognomi);
+    listaCognomi.sort()
+    mioCognome.style.textTransform = "capitalize";
+    //console.log(userCognome);
+    //console.log(listaCognomi);
+    for (var i=0; i<listaCognomi.length; i++) {
+        var cognomi = listaCognomi[i];
+        var elenco = document.getElementById("lista_cognomi").innerHTML;
+        document.getElementById("lista_cognomi").innerHTML = elenco + "<li>" + cognomi + "</li>";
+
+    }
 
 
 })
