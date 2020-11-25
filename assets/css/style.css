@@ -1,3 +1,12 @@
+* {
+    padding: 10;
+    margin: 10;
+    box-sizing: border-box;
+}
 #lista_cognomi {
     text-transform: capitalize;
+}
+
+h3 {
+    text-align: center;
 }

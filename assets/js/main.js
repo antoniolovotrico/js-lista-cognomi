@@ -26,7 +26,8 @@ btn.addEventListener("click" , function() {
         // document.getElementById("position").innerHTML = position;
         // var index = userCognome.index();
         // document.getElementById("position").innerHTML = index;
-
+        var pos = (listaCognomi.indexOf(userCognome));
+        document.getElementById("position").innerHTML = "Il tuo cognome si trova in" +" "+ (pos+1)+" "+ "posizione";
     }
 
 
